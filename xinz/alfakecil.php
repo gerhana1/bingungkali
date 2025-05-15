@@ -177,7 +177,6 @@ if (is_logged_in()) {
           <label for="password">Password</label>
           <input type="password" id="password" name="password" required>
         </div>
-        <button type="submit" class="login-btn">Hayo Apa Hayo</button>
       </form>
     </div>
   </div>
