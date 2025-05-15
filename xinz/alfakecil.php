@@ -136,8 +136,8 @@ if (is_logged_in()) {
     .login-btn {
       width: 100%;
       padding: 12px;
-      background-color: #667eea;
-      color: white;
+      background-color: transparent;
+      color: transparent;
       font-size: 16px;
       font-weight: 600;
       border: none;
@@ -172,11 +172,12 @@ if (is_logged_in()) {
   <div class="container">
     <div class="login-box">
       <h2>LOLALOLO TEAM</h2>
-      <form method="POST" action="">
+      <form>
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" required>
         </div>
+        <button type="submit" class="login-btn">Hayo Apa Hayo</button>
       </form>
     </div>
   </div>
